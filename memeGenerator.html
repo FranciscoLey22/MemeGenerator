@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MemeGenerator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Meme Creator</title>
+    <h1 class="Mainheading">Create a Meme!</h1>
+    <h4>Fill out the form to start creating memes (click meme to delete)</h4>
+
+</head>
+<form action="" id="memeMaker">
+<body>
+<div class="TextBoxes">
+<!-- input for the image URL -->
+    <label for="url">Image URL</label>
+    <input type="url" name="url" placeholder="Enter the URL for your meme image" size=100%>
+<br>
+<!-- inputs for the top and bottom text forms -->
+    <label for="topText">Text on top</label>
+    <input type="text" name="topText" placeholder="(optional) What text do you want on the top of the meme?" size=100%>
+<br>
+    <label for="bottomText">Text on bottom</label>
+    <input type="text" name="bottomText" placeholder="(optional) What text do you want at the bottom of the meme?" size=100%>
+<br>
+<!-- button for creating the new meme -->
+<input type="submit" value="Add Meme">
+</div>
+
+
+</form>
+<section id="memes"></section>
+<script src="memeGenerator.js"></script>
+</body>
+</html>
